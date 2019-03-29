@@ -1,24 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rpc-Uh-tXq">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MountainsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mountainsVC" id="BYZ-38-t0r" customClass="MountainsVC" customModule="shortCut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="Ua8-0A-M9W">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ua8-0A-M9W" secondAttribute="trailing" id="6dU-gc-jFT"/>
+                            <constraint firstItem="Ua8-0A-M9W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FjZ-qc-fo3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ua8-0A-M9W" secondAttribute="bottom" id="dQG-xf-j5m"/>
+                            <constraint firstItem="Ua8-0A-M9W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zwg-ux-ppe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Y4c-OG-Q8t">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="1WX-C3-3kq">
+                            <connections>
+                                <segue destination="Fbc-kc-BlU" kind="show" id="eqV-5r-Xvz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="909" y="775"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s2C-lm-Dbr">
+            <objects>
+                <viewController storyboardIdentifier="spaceVC" id="Fbc-kc-BlU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X5T-mZ-1Qc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Space" translatesAutoresizingMaskIntoConstraints="NO" id="ygg-kh-kw6">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TgS-hr-ycC" firstAttribute="trailing" secondItem="ygg-kh-kw6" secondAttribute="trailing" id="IQX-WV-w0j"/>
+                            <constraint firstItem="ygg-kh-kw6" firstAttribute="leading" secondItem="TgS-hr-ycC" secondAttribute="leading" id="fIo-IU-XMd"/>
+                            <constraint firstItem="TgS-hr-ycC" firstAttribute="bottom" secondItem="ygg-kh-kw6" secondAttribute="bottom" id="nZe-Yu-hZB"/>
+                            <constraint firstItem="ygg-kh-kw6" firstAttribute="top" secondItem="TgS-hr-ycC" secondAttribute="top" id="vv1-xS-9je"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TgS-hr-ycC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GYm-ht-N74">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="s9V-LM-Uig">
+                            <connections>
+                                <segue destination="QFR-qn-ezZ" kind="show" id="iB9-Mn-QZO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ae-0i-HQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="770"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="42Q-B1-uhy">
+            <objects>
+                <viewController storyboardIdentifier="oceanVC" id="QFR-qn-ezZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tvP-U0-HQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ocean" translatesAutoresizingMaskIntoConstraints="NO" id="zhg-uK-Fxk">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zhg-uK-Fxk" firstAttribute="leading" secondItem="niS-K5-nYW" secondAttribute="leading" id="LVB-Dy-5pD"/>
+                            <constraint firstItem="niS-K5-nYW" firstAttribute="bottom" secondItem="zhg-uK-Fxk" secondAttribute="bottom" id="NnI-9q-I05"/>
+                            <constraint firstItem="niS-K5-nYW" firstAttribute="trailing" secondItem="zhg-uK-Fxk" secondAttribute="trailing" id="f3f-7q-EcU"/>
+                            <constraint firstItem="zhg-uK-Fxk" firstAttribute="top" secondItem="niS-K5-nYW" secondAttribute="top" id="gPk-G8-SjS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="niS-K5-nYW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2p4-jw-MQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2406" y="780"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bnb-0w-EAm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rpc-Uh-tXq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bpE-ai-YGg">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mOU-Mm-yQf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="593-eW-Jac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="769.56521739130437"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Mountains" width="375" height="667"/>
+        <image name="Ocean" width="375" height="667"/>
+        <image name="Space" width="375" height="667"/>
+    </resources>
 </document>
