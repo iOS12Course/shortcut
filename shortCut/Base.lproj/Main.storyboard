@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="909" y="775"/>
         </scene>
-        <!--View Controller-->
+        <!--SpaceVC-->
         <scene sceneID="s2C-lm-Dbr">
             <objects>
-                <viewController storyboardIdentifier="spaceVC" id="Fbc-kc-BlU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="spaceVC" id="Fbc-kc-BlU" customClass="SpaceVC" customModule="shortCut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X5T-mZ-1Qc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="1638" y="770"/>
         </scene>
-        <!--View Controller-->
+        <!--OceanVC-->
         <scene sceneID="42Q-B1-uhy">
             <objects>
-                <viewController storyboardIdentifier="oceanVC" id="QFR-qn-ezZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="oceanVC" id="QFR-qn-ezZ" customClass="OceanVC" customModule="shortCut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tvP-U0-HQ7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
